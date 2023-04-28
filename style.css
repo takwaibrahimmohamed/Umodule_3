@@ -1,0 +1,120 @@
+body{
+	margin:0;
+	padding:0;
+}
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+
+
+/* startskeleto */
+.bg-preload{
+    position: relative;
+  
+     
+  }
+  .bg-preload::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: beige;
+    background-size: 200%;
+    animation: skelton 20s infinite reverse;
+  }
+  @keyframes skelton{
+    0%{
+      background-position:-100% 0 ;
+    }
+    100%{
+      background-position: 100% 0;
+    }
+  }
+  /* endskeleto */
+
+
+  /* filter. */
+  .hide { /* You can play with the seconds to change the "animation" */
+    animation: hide .3s ease 0s 1 normal forwards;
+    transform-origin: center;
+    display: none;
+
+  }
+  .show { /* You can play with the seconds to change the "animation" */
+      animation: show .3s ease 0s 1 normal forwards;    
+      transform-origin: center;
+      
+     
+  }
+
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+ 
+  .gallery{
+    padding: 80px 0px;
+  }
+  img{
+    max-width: 100%;
+  }
+  .gallery img{
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+ 
+  #gallery-popup .modal-img{
+    width: 100%;
+  }
+  
+  /* @keyframes hide {
+    0%{
+      transform: scale(1);        
+    }
+    100% {
+      transform: scale(0);        
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+  }
+  @keyframes show {
+    0%{
+      transform: scale(0);     
+      width: 0;
+      height: 0;
+      margin: 0;   
+    }
+    100% {
+      transform: scale(1);    
+    }
+  } */
+  /* filter. */
